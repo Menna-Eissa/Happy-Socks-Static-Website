@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Happy Socks</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: #fff4f8; }
+    nav { background: #ff4f93; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav .logo { color: #fff; font-size: 22px; font-weight: bold; }
+    nav a { color: #fff; text-decoration: none; margin-left: 18px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .form-box { max-width: 420px; margin: 50px auto; background: #fff; padding: 30px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+    .form-box h2 { text-align: center; color: #ff4f93; margin-bottom: 20px; }
+    label { display: block; margin: 12px 0 5px; font-weight: bold; }
+    input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+    input:focus { outline: none; border-color: #ff4f93; }
+    button { width: 100%; margin-top: 20px; padding: 12px; background: #ff4f93; color: #fff; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #e03d7f; }
+    .note { text-align: center; margin-top: 15px; }
+    .note a { color: #ff4f93; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">🧦 Happy Socks</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <div class="form-box">
+    <h2>Create Account</h2>
+    <form onsubmit="event.preventDefault(); alert('Account created successfully!');">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="At least 6 characters" minlength="6" required>
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" placeholder="Repeat your password" minlength="6" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="note">Already have an account? <a href="login.html">Log In</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Happy Socks</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">🧦 Happy Socks</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <header class="page-title">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+  </header>
+
+  <section class="contact-wrap">
+    <div class="info">
+      <h3>Get in Touch</h3>
+      <p>📍 Cairo, Egypt</p>
+      <p>📞 +20 100 000 0000</p>
+      <p>✉️ info@happysocks.com</p>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! Thank you.'); this.reset();">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>© 2026 Happy Socks. All rights reserved.</footer>
+</body>
+</html>
